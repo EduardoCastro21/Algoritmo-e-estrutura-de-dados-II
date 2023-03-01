@@ -56,11 +56,13 @@ int main() {
    scanf("%[^\n]",text);
    int qtd;
    scanf("%d \n", &qtd);
-   char palavra[1000];
+   char palavra[50];
     scanf("%[^\n]",palavra);
     char *pt;
+
     pt = strtok(palavra, "!. ");
     while(pt){
+        //printf("token: %s\n", pt);
         rabinKarp(pt,text,q);
         printf("\n");
         pt = strtok(NULL, "!. ");
