@@ -33,7 +33,7 @@ void rabinKarp(char pattern[], char text[], int q) {
           break;
       }
 
-      if (j == m && text[j+1]!=aux){
+      if (j == m){
         printf("%d ", i);
         cout++;
       }
