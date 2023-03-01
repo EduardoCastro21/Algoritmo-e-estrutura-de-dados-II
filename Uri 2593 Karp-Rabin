@@ -15,7 +15,6 @@ void rabinKarp(char pattern[], char text[], int q) {
   int t = 0;
   int h = 1;
   int cout = 0;
-  char aux = " ";
 
   for (i = 0; i < m - 1; i++)
     h = (h * d) % q;
